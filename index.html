@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevent default scrollbars */
+        }
+
+        .background {
+            content: "";
+            position: fixed; /* Change to fixed so it stays in place while scrolling */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('background-image.jpg'); /* Replace with your background image path */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3; /* Adjust opacity to make it translucent */
+            z-index: -1; /* Ensure it is behind the content */
+        }
+
+        .container {
+            position: relative;
+            z-index: 1; /* Ensure content is above the background */
+            overflow-y: auto; /* Enable vertical scrolling */
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="container">
+        <header>
+            <h1>NEWS DAILY</h1>
+        </header>
+
+        <!-- Breaking News Ticker below the header -->
+        <div class="breaking-news">
+            <p>Breaking News: Stay tuned for the latest updates on global events, tech breakthroughs, and health tips!</p>
+        </div>
+
+        <section class="newsletter-section">
+            <h2>Email Newsletters</h2>
+            <p>Stay updated with the latest news and analysis directly in your inbox. Choose your preferred newsletters below, enter your email address, and click subscribe.</p>
+            
+            <div class="newsletter-options">
+                <div class="newsletter">
+                    <h3>Daily Digest</h3>
+                    <p>Get the top news highlights every morning.</p>
+                    <button onclick="window.location.href='details.html'">Sign Up</button>
+                </div>
+                <div class="newsletter">
+                    <h3>Technology Today</h3>
+                    <p>Stay informed on the latest tech trends and innovations.</p>
+                    <button onclick="window.location.href='details.html'">Sign Up</button>
+                </div>
+                <div class="newsletter">
+                    <h3>Health & Wellness</h3>
+                    <p>Receive health tips and wellness articles daily.</p>
+                    <button onclick="window.location.href='details.html'">Sign Up</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-news">
+            <h2>Related News</h2>
+            <div class="related-news-images">
+                <div class="news-image">
+                    <a href="https://example.com/global-events" target="_blank"> <!-- Replace with actual URL -->
+                        <img src="news1.jpg" alt="Related News 1"> <!-- Replace with actual image path -->
+                    </a>
+                    <p>Latest updates on global events.</p>
+                </div>
+                <div class="news-image">
+                    <a href="https://example.com/tech-innovations" target="_blank"> <!-- Replace with actual URL -->
+                        <img src="news2.jpg" alt="Related News 2"> <!-- Replace with actual image path -->
+                    </a>
+                    <p>Tech innovations and breakthroughs.</p>
+                </div>
+                <div class="news-image">
+                    <a href="https://example.com/health-tips" target="_blank"> <!-- Replace with actual URL -->
+                        <img src="news3.jpg" alt="Related News 3"> <!-- Replace with actual image path -->
+                    </a>
+                    <p>Health tips and wellness strategies.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

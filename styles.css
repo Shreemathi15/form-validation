@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your actual image file */
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: rgba(0, 51, 102, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.breaking-news {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.breaking-news p {
+    display: inline-block;
+    margin: 0;
+    font-size: 18px;
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.newsletter-section {
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletter-section p {
+    font-size: 16px;
+    margin-bottom: 20px; /* Reduced margin-bottom for less space */
+}
+
+.newsletter-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.newsletter {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px; /* Fixed height for uniformity */
+}
+
+.newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.newsletter p {
+    font-size: 14px;
+    text-align: center;
+    flex-grow: 1; /* This allows the text to take up the available space */
+    margin-bottom: 10px; /* Reduced space between text and button */
+}
+
+.newsletter button {
+    padding: 12px 24px; /* Increased padding for larger button */
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px; /* Larger font size for better visibility */
+    margin-top: 10px; /* Slight margin for spacing */
+}
+
+.newsletter button:hover {
+    background-color: #0056b3;
+}
+
+.related-news {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-news h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.related-news-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.news-image {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 250px; /* Fixed height for uniformity */
+}
+
+.news-image img {
+    width: 100%;
+    height: 70%; /* Consistent image height within each box */
+    object-fit: cover; /* Ensures the image covers the space */
+}
+
+.news-image p {
+    padding: 10px;
+    font-size: 14px;
+    height: 30%; /* Ensures the text box is consistent */
+    background-color: #f0f0f0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
