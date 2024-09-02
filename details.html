@@ -84,6 +84,11 @@
             height: 60px;
         }
 
+        input[type="file"] {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
         button {
             width: 100%;
             padding: 12px;
@@ -152,6 +157,12 @@
                     <option value="premium">Premium</option>
                     <option value="vip">VIP</option>
                 </select>
+            </div>
+
+            <!-- Image Upload for Proof -->
+            <div class="form-group">
+                <label for="proof">Upload Proof (Image):</label>
+                <input type="file" id="proof" name="proof" accept="image/*" required>
             </div>
 
             <!-- Submit Button -->
